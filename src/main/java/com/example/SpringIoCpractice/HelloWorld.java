@@ -10,4 +10,11 @@ public class HelloWorld {
   public void getHello() {
     System.out.println(hello);
   }
+
+  public void init(){
+    System.out.println("Bean-init.");
+  }
+  public void destroy(){
+    System.out.println("Bean-destroy");
+  }
 }

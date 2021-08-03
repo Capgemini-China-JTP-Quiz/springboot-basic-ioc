@@ -6,4 +6,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--Code here-->
+    <bean id="helloWorld" class="com.example.SpringIoCpractice.HelloWorld" init-method="init" destroy-method="destroy">
+        <!-- 属性配置，name是bean对象中的属性，value是给该属性赋值 -->
+        <property name="hello" value="Hello World!"/>
+    </bean>
 </beans>
